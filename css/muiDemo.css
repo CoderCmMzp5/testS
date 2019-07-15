@@ -1,0 +1,133 @@
+.mui-bar-tab .mui-tab-item.mui-active {
+    color: #5f7cf4!important
+}
+.mui-bar-tab .mui-tab-item span{
+	position: relative;
+	top:6px!important;
+}
+.mui-bar-tab .mui-tab-item span.mui-tab-label{
+	position: relative;
+	top:5px!important;
+	font-size: 12px;
+	color:#C2C5D0
+}
+.mui-bar-tab .mui-tab-item.mui-active span.mui-tab-label{
+	 color: #122c62!important
+}
+.mui-bar-tab .mui-tab-item .mui-icon~.mui-tab-label {
+    top: 3px!important;
+}
+.mui-slider-indicator .mui-indicator {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 1px 6px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: rgba(250,250,250,0.75)!important;
+    -webkit-box-shadow: 0 0 1px 1px rgba(130,130,130,.3)!important;
+    box-shadow: 0 0 1px 1px rgba(130,130,130,.3)!important;
+}
+.padding0{
+	padding-top: 0!important;
+	font-size: 16px!important;
+}
+.margin5{
+	margin-bottom:5px!important;
+}
+
+
+.mui-bar{
+	box-shadow: none;
+	border-bottom: 1px solid #F6F6F6;
+	background: #fff;
+	color: #333;
+	box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.1);
+}
+.mui-content{
+	background:rgba(245,245,245,1);
+}
+.forms{
+	margin: 15px 11px;
+}
+
+.mui-active .common-logo-1{
+	width: 22px;
+	height:22px;
+	display: block;
+	margin:0 auto;
+	background:url(../img/图标一@2x.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.common-logo-1{
+	width: 22px;
+	height:22px;
+	display: block;
+	margin:0 auto;
+	background:url(../img/图标一@2x.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+.mui-active .common-logo-2{
+	width: 23px;
+	height:23px;
+	display: block;
+	margin:0 auto;
+	background:url(../img/图标二@2x.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.common-logo-2{
+	width: 23px;
+	height:23px;
+	display: block;
+	margin:0 auto;
+	background:url(../img/图标二@2x.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+.mui-active .common-logo-3{
+	width: 21px;
+	height:21px;
+	display: block;
+	margin:0 auto;
+	background:url(../img/图标三@2x.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.common-logo-3{
+	width: 21px;
+	height:21px;
+	display: block;
+	margin:0 auto;
+	background:url(../img/图标三@2x.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+.mui-active .common-logo-4{
+	width: 22px;
+	height:22px;
+	display: block;
+	margin:0 auto;
+	background:url(../img/图标四@2x.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.common-logo-4{
+	width: 22px;
+	height:22px;
+	display: block;
+	margin:0 auto;
+	background:url(../img/图标四@2x.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+.mui-active .common-logo-5{
+	width: 21px;
+	height:22px;
+	display: block;
+	margin:0 auto;
+	background:url(../img/图标五@2x.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.common-logo-5{
+	width: 21px;
+	height:22px;
+	display: block;
+	margin:0 auto;
+	background:url(../img/图标五@2x.png) no-repeat center center;
+	background-size: 100% 100%;
+}

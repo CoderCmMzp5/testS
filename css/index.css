@@ -1,0 +1,229 @@
+html,body{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.indexHead{
+  width: 100%;
+  height: 44px;
+  background: #3c5bbd;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  line-height: 44px
+}
+.indexHead img{
+  width: 18px;
+}
+.indexHead img:nth-of-type(1){
+  float: left;
+  position: relative;
+  left:15px;
+  top:11px;
+}
+.indexHead img:nth-of-type(2){
+  float: right;
+  position: relative;
+  right:15px;
+  top:13px;
+}
+.indexLogo{
+  padding-top: 15px;
+  padding-bottom: 8px;
+  overflow: hidden;
+  border-bottom: 8px solid #f5f4f9;
+}
+.indexLogo div{
+  width: 24.9%;
+  text-align: center;
+  display: inline-block;
+  float: left;
+}
+.indexLogo div img{
+  display: block;
+  width: 46px;
+  margin: 0 auto;
+}
+.indexLogo div span{
+  color: #000;
+  font-size:12px;
+  position: relative;
+  top:3px;
+}
+.ggTitle{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  border-bottom: 8px solid #f5f4f9;
+}
+.ggTitle img{
+ width: 30px;
+ margin-right: 0px;
+ vertical-align: middle;
+}
+.ggTitle span:nth-of-type(1){
+  color: #000;
+  font-size: 12px;
+}
+.ggTitle span:nth-of-type(2){
+  color: #3c5bbd;
+  font-size: 9px;
+  display: inline-block;
+  padding-right: 7px;
+  padding-left: 7px;
+  border: 1px solid #3c5bbd;
+  border-radius: 5px;
+  float: right;
+  position: relative;
+  right: 10px;
+      height: 20px;
+    line-height: 20px;
+    transform: scale(0.9);
+}
+
+
+.indexContent{
+  padding-top: 10px;
+  padding-bottom: 3px;
+  padding-left: 12px;
+
+  border-bottom: 8px solid #f5f4f9;
+}
+.indexContetnHeader img{
+ width: 40px;
+ margin-right: 5px;
+ vertical-align: middle;
+}
+.indexContetnHeader span:nth-of-type(1){
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  top: 2px;
+}
+.indexContetnHeader span:nth-of-type(2){
+  color: #4d69c3;
+  font-size: 15px;
+  display: inline-block;
+  padding-right: 7px;
+  padding-left: 7px;
+  border-radius: 5px;
+  position: absolute;
+  right:2px;
+  font-weight: bold;
+  top: 50%;
+  margin-top: -10px;
+}
+.indexContetnHeader{
+  position: relative;
+}
+.indexContetnMidde{
+  padding-top: 5px;
+      padding-bottom: 5px;
+  font-size: 12px;
+  color: #7c7c7c;
+  overflow: hidden;
+}
+.indexContetnMidde span:nth-of-type(1){
+  float: left;
+}
+.indexContetnMidde span:nth-of-type(2){
+  float: right;
+      position: relative;
+    right: 10px;
+}
+.indexContetnMiddeBottom{
+  font-size: 12px;
+  color: #7c7c7c;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  position: relative;
+}
+.indexContetnMiddeBottom span:nth-of-type(2){
+        padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background: #3c5bbd;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    height: 20px;
+    line-height: 20px;
+    transform: scale(0.9);
+}
+.indexProgress{
+  width: 97%;
+  height: 5px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  position: relative;
+
+}
+.indexProgressInner{
+    width: 40%;
+    height: 8px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    border-radius: 8px;
+    background-image: linear-gradient(90deg, #3C5BBD 40%, #06CFB5 82%);
+}
+.indexTabHeader{
+      width: 49%;
+    height: 42px;
+    text-align: center;
+    line-height: 40px;
+    color: #b5b5b5;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    padding-top: 4px;
+}
+.lineBorder{
+  position: absolute;
+  bottom:0;
+  width: 80px;
+  left: 50%;
+  margin-left: -40px;
+  height: 2px;
+  background: #1687e6;
+  border-radius: 2px;
+}
+.indexTab{
+  background: #fff
+}
+.actives{
+  color: #000;
+}
+table tr th{
+  height: 26px;
+  background: #f5fafe;
+  color: #a9aaaa;
+  text-align: center;
+  font-weight: normal;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 12px;
+  line-height: 26px;
+}
+table{
+  width: 100%;
+}
+table tr td{
+  height: 26px;
+  background: #ffffff;
+  color: #000000;
+  text-align: center;
+  font-weight: normal;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 12px;
+  line-height: 26px;
+  border-bottom: 1px solid #ededed
+}
+table tr td:nth-of-type(4){
+  color: #3d5cbd;
+}

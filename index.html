@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>主页</title>
+		<meta name="viewport" content="width=devtop_bannerice-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" href="css/muiReset.css" />
+	</head>
+
+	<body>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="#indexPage">
+				<span class="common-logo-1"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-earnMoney">
+				<span class="common-logo-2"></span>
+				<span class="mui-tab-label">学习</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-share">
+				<span class="common-logo-3"></span>
+				<span class="mui-tab-label">考试</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-commission">
+				<span class="common-logo-4"></span>
+				<span class="mui-tab-label">公告</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-setting">
+				<span class="common-logo-5"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+		<div class="mui-content" id="app">
+			<div id="indexPage" class="mui-control-content mui-active">
+				<div class="indexHead">
+					<img src="images/tongzhi.png">
+					<span>{{title}}</span>
+					<img src="images/sousuo.png">
+				</div>
+				<div class="indexLogo">
+					<div>
+						<img src="images/Group.png">
+						<span>课程中心</span>
+					</div>
+					<div>
+						<img src="images/Group2.png">
+						<span>考试</span>
+					</div>
+					<div>
+						<img src="images/Group3.png">
+						<span>通知公告</span>
+					</div>
+					<div>
+						<img src="images/Group4.png">
+						<span>在线帮助</span>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+				<div class="ggTitle">
+					<img src="images/gg.jpg">
+					<span>雨雪天气行车时司机驾车8字诀</span>
+					<span class="btnXq">详情</span>
+				</div>
+				<div class="indexContent">
+					<div class="indexContetnHeader">
+						<img src="images/group5.png">
+						<span>张孟子</span>
+						<span>学习进度30%</span>
+					</div>
+					<div class="indexContetnMidde">
+						<span>计划学时:8</span>
+						<span>完成学时:2</span>
+					</div>
+					<div class="indexProgress">
+						<div class="indexProgressInner"></div>
+					</div>
+					<div class="indexContetnMiddeBottom">
+						<span>本月考核完成情况:<font style="color: #d34e76;margin-left: 2px;">未完成</font></span>
+						<span>考试</span>
+					</div>
+				</div>
+				<div class="indexTab">
+					<div class="indexTabHeader" @click="changeTab(0)">
+						<div :class="{ 'actives': showNum==0 }">考核通过 <span class="lineBorder" v-if="showNum == 0"></span> </div>
+					</div>
+					<div class="indexTabHeader" @click="changeTab(1)">
+						<div :class="{ 'actives': showNum==1 }">学习榜单 <span class="lineBorder" v-if="showNum == 1"></span> </div>
+					</div>
+				</div>
+				<table>
+					<tr>
+						<th style="width: 20%;">姓名</th>
+						<th style="width: 30%;">考核科目</th>
+						<th style="width: 30%;">考核成绩</th>
+						<th style="width: 20%;">考核时间</th>
+					</tr>
+					<tr>
+						<td>张孟子</td>
+						<td>管理考核岗</td>
+						<td>24</td>
+						<td>4分35秒</td>
+					</tr>
+					<tr>
+						<td>张孟子</td>
+						<td>管理考核岗</td>
+						<td>24</td>
+						<td>4分35秒</td>
+					</tr>
+					<tr>
+						<td>张孟子</td>
+						<td>管理考核岗</td>
+						<td>24</td>
+						<td>4分35秒</td>
+					</tr>
+					<tr>
+						<td>张孟子</td>
+						<td>管理考核岗</td>
+						<td>24</td>
+						<td>4分35秒</td>
+					</tr>
+					<tr>
+						<td>张孟子</td>
+						<td>管理考核岗</td>
+						<td>24</td>
+						<td>4分35秒</td>
+					</tr>
+					<tr>
+						<td>张孟子</td>
+						<td>管理考核岗</td>
+						<td>24</td>
+						<td>4分35秒</td>
+					</tr>
+					<tr>
+						<td>张孟子</td>
+						<td>管理考核岗</td>
+						<td>24</td>
+						<td>4分35秒</td>
+					</tr>
+					<tr>
+						<td>张孟子</td>
+						<td>管理考核岗</td>
+						<td>24</td>
+						<td>4分35秒</td>
+					</tr>
+				</table>
+			</div>
+			<div id="tabbar-with-earnMoney" class="mui-control-content">
+				2
+			</div>
+			<div id="tabbar-with-share" class="mui-control-content">
+				3
+			</div>
+			<div id="tabbar-with-commission" class="mui-control-content">
+				4
+			</div>
+			<div id="tabbar-with-setting" class="mui-control-content">
+				5
+			</div>
+		</div>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+	<script>
+	new Vue({
+	  el: '#app',
+	  data: {
+	    title: '安全教育与考核暨监服务平台',
+	    showNum:0
+	  },
+	  methods:{
+	  	changeTab(type){
+	  		this.showNum=type;
+	  	}
+	  }
+	})
+	</script>
+
+</html>

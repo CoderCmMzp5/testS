@@ -94,7 +94,7 @@
 						<div :class="{ 'actives': showNum==1 }">学习榜单 <span class="lineBorder" v-if="showNum == 1"></span> </div>
 					</div>
 				</div>
-				<table>
+				<table v-if="showNum == 0">
 					<tr>
 						<th style="width: 20%;">姓名</th>
 						<th style="width: 30%;">考核科目</th>
@@ -148,6 +148,85 @@
 						<td>管理考核岗</td>
 						<td>24</td>
 						<td>4分35秒</td>
+					</tr>
+				</table>
+				<table v-if="showNum == 1">
+					<tr>
+						<th style="width: 15%;">排名</th>
+						<th style="width: 30%;">姓名</th>
+						<th style="width: 15%;">学时</th>
+						<th style="width: 20%;">截止日期</th>
+						<th style="width: 20%;">年度</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>刘大同</td>
+						<td>24</td>
+						<td>07-01</td>
+						<td>2019</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>刘同</td>
+						<td>11</td>
+						<td>07-01</td>
+						<td>2019</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>刘想同</td>
+						<td>24</td>
+						<td>07-01</td>
+						<td>2019</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>我大同</td>
+						<td>24</td>
+						<td>07-01</td>
+						<td>2019</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>才大同</td>
+						<td>24</td>
+						<td>07-01</td>
+						<td>2019</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>刘大同</td>
+						<td>24</td>
+						<td>07-01</td>
+						<td>2019</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>刘大同</td>
+						<td>24</td>
+						<td>07-01</td>
+						<td>2019</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>刘大同</td>
+						<td>24</td>
+						<td>07-01</td>
+						<td>2019</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>刘大同</td>
+						<td>24</td>
+						<td>07-01</td>
+						<td>2019</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>刘大同</td>
+						<td>24</td>
+						<td>07-01</td>
+						<td>2019</td>
 					</tr>
 				</table>
 			</div>

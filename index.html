@@ -245,16 +245,193 @@
 				</table>
 			</div>
 			<div id="tabbar-with-earnMoney" class="mui-control-content">
-				2
+				<div class="indexHead">
+					<img src="images/tongzhi.png">
+					<span>课程</span>
+					<img src="images/sousuo.png">
+				</div>
+				<div class="indexTab bgF4">
+					<div class="indexTabHeaderHead" @click="changeTabHead(0)">
+						<div :class="{ 'activesHead': showNumHead==0 }">全部课程 <span class="lineBorder lineBorderHead" v-if="showNumHead == 0"></span> </div>
+					</div>
+					<div class="indexTabHeaderHead" @click="changeTabHead(1)">
+						<div :class="{ 'activesHead': showNumHead==1 }">视频课程 <span class="lineBorder lineBorderHead" v-if="showNumHead == 1"></span> </div>
+					</div>
+					<div class="indexTabHeaderHead" @click="changeTabHead(2)">
+						<div :class="{ 'activesHead': showNumHead==2 }">文档课程 <span class="lineBorder lineBorderHead" v-if="showNumHead == 2"></span> </div>
+					</div>
+					<div class="indexTabHeaderHead" @click="changeTabHead(3)">
+						<div :class="{ 'activesHead': showNumHead==3 }">PPT课程 <span class="lineBorder lineBorderHead" v-if="showNumHead == 3"></span> </div>
+					</div>
+				</div>
+				<div v-if="showNumHead == 0">
+					<div class="numDiv">1、交通事故警示录<img src="images/rightArrow.png" class="arrow"></div>
+					<div class="numDiv">2、职业病防治法宣传<img src="images/rightArrow.png" class="arrow"></div>
+					<div class="numDiv">3、春季行车安全教育<img src="images/rightArrow.png" class="arrow"></div>
+					<div class="numDiv">4、道路交通事故与应急处理<img src="images/rightArrow.png" class="arrow"></div>
+					<div class="numDiv">5、冬季"刘芳"<img src="images/rightArrow.png" class="arrow"></div>
+				</div>
+				<div v-if="showNumHead == 1">
+					<div class="numDiv">1、职业病防治法宣传<img src="images/rightArrow.png" class="arrow"></div>
+					<div class="numDiv">2、交通事故警示录<img src="images/rightArrow.png" class="arrow"></div>
+					<div class="numDiv">3、春季行车安全教育<img src="images/rightArrow.png" class="arrow"></div>
+					<div class="numDiv">4、道路交通事故与应急处理<img src="images/rightArrow.png" class="arrow"></div>
+					<div class="numDiv">5、冬季"刘芳"<img src="images/rightArrow.png" class="arrow"></div>
+				</div>
+				<div v-if="showNumHead == 2">
+					<div class="numDiv">1、道路交通事故与应急处理<img src="images/rightArrow.png" class="arrow"></div>
+					<div class="numDiv">2、职业病防治法宣传<img src="images/rightArrow.png" class="arrow"></div>
+					<div class="numDiv">3、春季行车安全教育<img src="images/rightArrow.png" class="arrow"></div>
+					<div class="numDiv">4、交通事故警示录<img src="images/rightArrow.png" class="arrow"></div>
+					<div class="numDiv">5、冬季"刘芳"<img src="images/rightArrow.png" class="arrow"></div>
+				</div>
+				<div v-if="showNumHead == 3">
+					<div class="numDiv">1、冬季"刘芳"<img src="images/rightArrow.png" class="arrow"></div>
+					<div class="numDiv">2、职业病防治法宣传<img src="images/rightArrow.png" class="arrow"></div>
+					<div class="numDiv">3、春季行车安全教育<img src="images/rightArrow.png" class="arrow"></div>
+					<div class="numDiv">4、道路交通事故与应急处理<img src="images/rightArrow.png" class="arrow"></div>
+					<div class="numDiv">5、交通事故警示录<img src="images/rightArrow.png" class="arrow"></div>
+				</div>
+				<div v-if="showNumHead == 4">
+					<div class="numDiv">1、春季行车安全教育<img src="images/rightArrow.png" class="arrow"></div>
+					<div class="numDiv">2、职业病防治法宣传<img src="images/rightArrow.png" class="arrow"></div>
+					<div class="numDiv">3、交通事故警示录<img src="images/rightArrow.png" class="arrow"></div>
+					<div class="numDiv">4、道路交通事故与应急处理<img src="images/rightArrow.png" class="arrow"></div>
+					<div class="numDiv">5、冬季"刘芳"<img src="images/rightArrow.png" class="arrow"></div>
+				</div>
 			</div>
 			<div id="tabbar-with-share" class="mui-control-content">
-				3
+				<div class="indexHead">
+					<img src="images/fc31fc16f4ef35b955c1f1fa725caea.png">
+					<span>交通事故警示录</span>
+					<img src="images/dde2aeb90579141536933a51684322d.png">
+				</div>
+				<div class="headerTop" style="background: #f5f4f9;">
+					交通事故警示录-电动车篇
+					<span></span>
+				</div>
+				<div class="vedioWrap">
+					<div class="vedio">
+						<div class="vedioHead">
+							<span style="color: #4966c1;font-size: 12px;">职业病防止宣传</span>
+							<span class="play" @click="playVedio" v-if="play_0 == false">开始</span>
+							<span class="states" v-if="play_0 == true">学习中...38秒</span>
+							<span class="save" v-if="play_0 == true">保存</span>
+						</div>
+						<video id="myVideo" poster="images/bgV.jpg">
+						  <source src="images/movie.mp4" type="video/mp4">
+						</video>
+						<img src="images/plays.png" class="btnPlay" >
+					</div>
+				</div>
+				<div class="indexTab " style="border-bottom: 10px solid #f5f4f9;    padding-left: 15px;" >
+					<div class="indexTabHeaderHead" @click="changeTabHead2(0)">
+						<div :class="{ 'activesHead': showNumHead2==0 }" style="font-weight: normal;font-size: 12px;">播放清单 <span class="lineBorder lineBorderHead" v-if="showNumHead2 == 0"></span> </div>
+					</div>
+					<div class="indexTabHeaderHead" @click="changeTabHead2(1)">
+						<div :class="{ 'activesHead': showNumHead2==1 }" style="font-weight: normal;font-size: 12px;">学习记录 <span class="lineBorder lineBorderHead" v-if="showNumHead2 == 1"></span> </div>
+					</div>
+				</div>
+				<div v-if="showNumHead2 == 0">
+					<div class="numDiv">1、职业病防治法宣传【学习中】<img src="images/play.png" class="arrow"></div>
+				</div>
+				<div v-if="showNumHead2 == 1" class="innerTableWrap">
+					<table class="innerTable">
+						<tr>
+							<th style="width: 10%;">ID</th>
+							<th style="width: 30%;">课件</th>
+							<th style="width: 15%;">时长</th>
+							<th style="width: 15%;">上次学习</th>
+							<th style="width: 15%;">累计学习</th>
+							<th style="width: 15%;">状态</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>职业病防止发宣传</td>
+							<td>30分钟</td>
+							<td>0分0秒</td>
+							<td>0分</td>
+							<td><img src="images/play.png" class="tdPlay" ></td>
+						</tr>
+					</table>
+				</div>
 			</div>
 			<div id="tabbar-with-commission" class="mui-control-content">
-				4
+				<div class="indexHead">
+					<img src="images/fc31fc16f4ef35b955c1f1fa725caea.png">
+					<span>交通事故警示录</span>
+					<img src="images/dde2aeb90579141536933a51684322d.png">
+				</div>
+				<div class="headerTop" style="background: #f5f4f9;">
+					交通事故警示录-电动车篇
+					<span></span>
+				</div>
+				<div class="vedioWrap">
+					<div class="vedio">
+						<div class="vedioHead">
+							<span class="extraSpan">交通事故警示录-电动车篇</span>
+						</div>
+						<video id="myVideo" poster="images/playsBg.png" style="height: 164px">
+						  <source src="images/movie.mp4" type="video/mp4">
+						</video>
+						<img src="images/plays.png" class="btnPlay" style="top: 45%;">
+						<span class="times">3分40秒</span>
+					</div>
+				</div>
+				<div class="indexTab " style="border-bottom: 10px solid #f5f4f9;    padding-left: 15px;" >
+					<div class="indexTabHeaderHead" @click="changeTabHead3(0)">
+						<div :class="{ 'activesHead': showNumHead3==0 }" style="font-weight: normal;font-size: 12px;">播放清单 <span class="lineBorder lineBorderHead" v-if="showNumHead3 == 0"></span> </div>
+					</div>
+					<div class="indexTabHeaderHead" @click="changeTabHead3(1)">
+						<div :class="{ 'activesHead': showNumHead3==1 }" style="font-weight: normal;font-size: 12px;">学习记录 <span class="lineBorder lineBorderHead" v-if="showNumHead3 == 1"></span> </div>
+					</div>
+				</div>
+				<div v-if="showNumHead3 == 0">
+					<div class="numDiv">1、职业病防治法宣传【学习中】<img src="images/play.png" class="arrow"></div>
+				</div>
+				<div v-if="showNumHead3 == 1">
+					<div class="numDiv">1、职业病防治法宣传【学习中2】<img src="images/play.png" class="arrow"></div>
+				</div>
 			</div>
 			<div id="tabbar-with-setting" class="mui-control-content">
-				5
+				<div class="indexHead">
+					<img src="images/fc31fc16f4ef35b955c1f1fa725caea.png">
+					<span>交通事故警示录</span>
+					<img src="images/dde2aeb90579141536933a51684322d.png">
+				</div>
+				<div class="headerTop" style="background: #f5f4f9;">
+					交通事故警示录-电动车篇
+					<span></span>
+				</div>
+				<div class="vedioWrap">
+					<div class="vedio">
+						<div class="vedioHead">
+							<span class="extraSpan">交通事故警示录-电动车篇</span>
+						</div>
+						<video id="myVideo" poster="images/playsBg.png" style="height: 164px">
+						  <source src="images/movie.mp4" type="video/mp4">
+						</video>
+						<div class="rlsbwrap">
+							<div class="innner_0"><img src="images/jx.png"><span class="">播放消耗流量10.5m,点击进行人脸识别!</span></div>
+							<div class="inner_1"><img src="images/rlsb.png">人脸识别</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="indexTab " style="border-bottom: 10px solid #f5f4f9;    padding-left: 15px;" >
+					<div class="indexTabHeaderHead" @click="changeTabHead3(0)">
+						<div :class="{ 'activesHead': showNumHead3==0 }" style="font-weight: normal;font-size: 12px;">播放清单 <span class="lineBorder lineBorderHead" v-if="showNumHead3 == 0"></span> </div>
+					</div>
+					<div class="indexTabHeaderHead" @click="changeTabHead3(1)">
+						<div :class="{ 'activesHead': showNumHead3==1 }" style="font-weight: normal;font-size: 12px;">学习记录 <span class="lineBorder lineBorderHead" v-if="showNumHead3 == 1"></span> </div>
+					</div>
+				</div>
+				<div v-if="showNumHead3 == 0">
+					<div class="numDiv">1、职业病防治法宣传【学习中】<img src="images/play.png" class="arrow"></div>
+				</div>
+				<div v-if="showNumHead3 == 1">
+					<div class="numDiv">1、职业病防治法宣传【学习中2】<img src="images/play.png" class="arrow"></div>
+				</div>
 			</div>
 		</div>
 	</body>
@@ -267,11 +444,27 @@
 	  el: '#app',
 	  data: {
 	    title: '安全教育与考核暨监服务平台',
-	    showNum:0
+	    showNum:0,
+	    showNumHead:0,
+	    showNumHead2:0,
+	    showNumHead3:0,
+	    play_0:false
 	  },
 	  methods:{
 	  	changeTab(type){
 	  		this.showNum=type;
+	  	},
+	  	changeTabHead(type){
+	  		this.showNumHead=type;
+	  	},
+	  	changeTabHead2(type){
+	  		this.showNumHead2=type;
+	  	},
+	  	changeTabHead3(type){
+	  		this.showNumHead3=type;
+	  	},
+	  	playVedio(){
+	  		this.play_0=true
 	  	}
 	  }
 	})

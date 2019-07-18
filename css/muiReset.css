@@ -64,7 +64,7 @@
 	height:22px;
 	display: block;
 	margin:0 auto;
-	background:url(../images/shouye.png) no-repeat center center;
+	background:url(../images/shouye_0.png) no-repeat center center;
 	background-size: 100% 100%;
 }
 .mui-active .common-logo-2{
@@ -72,7 +72,7 @@
 	height:23px;
 	display: block;
 	margin:0 auto;
-	background:url(../images/jy.png) no-repeat center center;
+	background:url(../images/jy_0.png) no-repeat center center;
     background-size: 100% 100%;
 }
 .common-logo-2{
@@ -88,7 +88,7 @@
 	height:21px;
 	display: block;
 	margin:0 auto;
-	background:url(../images/shitiguanli.png) no-repeat center center;
+	background:url(../images/shitiguanli_0.png) no-repeat center center;
     background-size: 100% 100%;
 }
 .common-logo-3{
@@ -104,7 +104,7 @@
 	height:22px;
 	display: block;
 	margin:0 auto;
-	background:url(../images/gg.png) no-repeat center center;
+	background:url(../images/gg_0.png) no-repeat center center;
     background-size: 100% 100%;
 }
 .common-logo-4{
@@ -120,7 +120,7 @@
 	height:22px;
 	display: block;
 	margin:0 auto;
-	background:url(../images/wd.png) no-repeat center center;
+	background:url(../images/wd_0.png) no-repeat center center;
     background-size: 100% 100%;
 }
 .common-logo-5{
@@ -130,4 +130,8 @@
 	margin:0 auto;
 	background:url(../images/wd.png) no-repeat center center;
 	background-size: 100% 100%;
+}
+.mui-bar-tab~.mui-content {
+    margin-bottom: 50px;
+    padding-bottom: 0;
 }

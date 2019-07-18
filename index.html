@@ -96,7 +96,7 @@
 						<div class="indexProgressInner"></div>
 					</div>
 					<div class="indexContetnMiddeBottom">
-						<span>本月考核完成情况:<font style="color: #d34e76;margin-left: 2px;">未完成</font></span>
+						<span>本月考核完成情况:<font>未完成</font></span>
 						<span>考试</span>
 					</div>
 				</div>
@@ -313,7 +313,7 @@
 				<div class="vedioWrap">
 					<div class="vedio">
 						<div class="vedioHead">
-							<span style="color: #4966c1;font-size: 12px;">职业病防止宣传</span>
+							<span class="vedioSpan_0">职业病防止宣传</span>
 							<span class="play" @click="playVedio" v-if="play_0 == false">开始</span>
 							<span class="states" v-if="play_0 == true">学习中...38秒</span>
 							<span class="save" v-if="play_0 == true">保存</span>
@@ -324,7 +324,7 @@
 						<img src="images/plays.png" class="btnPlay" >
 					</div>
 				</div>
-				<div class="indexTab " style="border-bottom: 10px solid #f5f4f9;    padding-left: 15px;" >
+				<div class="indexTab tabExa">
 					<div class="indexTabHeaderHead" @click="changeTabHead2(0)">
 						<div :class="{ 'activesHead': showNumHead2==0 }" style="font-weight: normal;font-size: 12px;">播放清单 <span class="lineBorder lineBorderHead" v-if="showNumHead2 == 0"></span> </div>
 					</div>
@@ -362,7 +362,7 @@
 					<span>交通事故警示录</span>
 					<img src="images/dde2aeb90579141536933a51684322d.png">
 				</div>
-				<div class="headerTop" style="background: #f5f4f9;">
+				<div class="headerTop headerTopExa" >
 					交通事故警示录-电动车篇
 					<span></span>
 				</div>
@@ -378,7 +378,7 @@
 						<span class="times">3分40秒</span>
 					</div>
 				</div>
-				<div class="indexTab " style="border-bottom: 10px solid #f5f4f9;    padding-left: 15px;" >
+				<div class="indexTab indexTab_extra"  >
 					<div class="indexTabHeaderHead" @click="changeTabHead3(0)">
 						<div :class="{ 'activesHead': showNumHead3==0 }" style="font-weight: normal;font-size: 12px;">播放清单 <span class="lineBorder lineBorderHead" v-if="showNumHead3 == 0"></span> </div>
 					</div>
@@ -413,12 +413,12 @@
 						</video>
 						<div class="rlsbwrap">
 							<div class="innner_0"><img src="images/jx.png"><span class="">播放消耗流量10.5m,点击进行人脸识别!</span></div>
-							<div class="inner_1"><img src="images/rlsb.png">人脸识别</div>
+							<div class="inner_1"><img src="images/rlsb.png"><span>人脸识别</span></div>
 						</div>
 						
 					</div>
 				</div>
-				<div class="indexTab " style="border-bottom: 10px solid #f5f4f9;    padding-left: 15px;" >
+				<div class="indexTab indexTab_extra" >
 					<div class="indexTabHeaderHead" @click="changeTabHead3(0)">
 						<div :class="{ 'activesHead': showNumHead3==0 }" style="font-weight: normal;font-size: 12px;">播放清单 <span class="lineBorder lineBorderHead" v-if="showNumHead3 == 0"></span> </div>
 					</div>

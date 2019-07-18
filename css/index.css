@@ -411,7 +411,7 @@ table tr td:nth-of-type(4){
     height: 80px;
     position: absolute;
     left: 45%;
-    top: 47%;
+    top: 45%;
     margin-left: -150px;
     text-align: center;
     /* margin-top: -100px; */
@@ -459,4 +459,19 @@ table tr td:nth-of-type(4){
 }
 .inner_1 span{
   vertical-align: middle;
+}
+.vedioSpan_0{
+   color: #4966c1;font-size: 12px;
+}
+.tabExa{
+  border-bottom: 10px solid #f5f4f9;    padding-left: 15px;
+}
+.headerTopExa{
+  background: #f5f4f9;
+}
+.indexTab_extra{
+  border-bottom: 10px solid #f5f4f9;    padding-left: 15px;
+}
+.indexContetnMiddeBottom span font{
+  color: #d34e76;margin-left: 2px;
 }

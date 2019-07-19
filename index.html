@@ -318,9 +318,8 @@
 							<span class="states" v-if="play_0 == true">学习中...38秒</span>
 							<span class="save" v-if="play_0 == true">保存</span>
 						</div>
-						<video id="myVideo" poster="images/bgV.jpg">
-						  <source src="images/movie.mp4" type="video/mp4">
-						</video>
+						<div class="pdfDiv" @click="pdfClick"></div>
+
 						<img src="images/plays.png" class="btnPlay" >
 					</div>
 				</div>
@@ -438,6 +437,7 @@
 	<script src="js/mui.min.js"></script>
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/index.js"></script>
+	<script src=""></script>
 	<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
 	<script>
 	new Vue({
@@ -465,6 +465,9 @@
 	  	},
 	  	playVedio(){
 	  		this.play_0=true
+	  	},
+	  	pdfClick(){
+	  		window.open('web/viewer.html?file=compressed.tracemonkey-pldi-09.pdf')
 	  	}
 	  }
 	})

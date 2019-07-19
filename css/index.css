@@ -411,7 +411,7 @@ table tr td:nth-of-type(4){
     height: 80px;
     position: absolute;
     left: 45%;
-    top: 45%;
+    top: 43%;
     margin-left: -150px;
     text-align: center;
     /* margin-top: -100px; */
@@ -474,4 +474,10 @@ table tr td:nth-of-type(4){
 }
 .indexContetnMiddeBottom span font{
   color: #d34e76;margin-left: 2px;
+}
+.pdfDiv{
+    width: 100%;
+    height: 150px;
+    background: #cccccc;
+    margin-top: 7px;
 }
